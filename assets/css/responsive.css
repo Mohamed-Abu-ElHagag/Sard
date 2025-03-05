@@ -11,7 +11,7 @@
   .hero .img img {
     width: 50%;
   }
-  .services .image{
+  .services .image {
     display: flex;
     justify-content: center;
   }
@@ -22,7 +22,33 @@
     width: 30%;
   }
   footer .extra .phone {
-   display: flex;
-   justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 767px) {
+  .books .containe .col-lg-4.col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .books .card {
+    width: 80%;
+  }
+  .books .card .image img {
+    width: 80%;
+  }
+  footer .nav{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  footer .navLink ul{
+    flex-direction: column;
+  }
+}
+@media (max-width:575px) {
+  .hero .text h1 {
+    font-size: 35px;
   }
 }

@@ -13,6 +13,9 @@
 body {
   background-color: var(--color);
 }
+section{
+  padding-top: 20px;
+}
 /* nav */
 nav {
   z-index: 9999;
@@ -150,7 +153,6 @@ nav .navbar-collapse ul li a {
 .books .all-gallery .navGallery {
   display: flex;
   justify-content: center;
-
   margin-bottom: 20px;
   border: 1px solid #e7e7e9;
   border-radius: 6px;
