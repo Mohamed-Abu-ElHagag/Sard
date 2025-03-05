@@ -13,9 +13,6 @@
 body {
   background-color: var(--color);
 }
-section{
-  padding-top: 20px;
-}
 /* nav */
 nav {
   z-index: 9999;
@@ -323,8 +320,11 @@ footer .navLink ul {
   justify-content: space-between;
   list-style: none;
   gap: 30px;
-  color: var(--dark);
+}
+footer .navLink a {
   font-size: 16px;
+  text-decoration: none;
+  color: var(--dark);
 }
 footer .copy-right p {
   font-size: 12px;
