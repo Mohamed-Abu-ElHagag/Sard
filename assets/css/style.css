@@ -70,8 +70,21 @@ nav .navbar-collapse ul li a {
 }
 /* hero */
 /* category */
+.category{
+  margin-top: 25px;
+}
+.category .slider-container {
+  position: relative;
+}
 .category .row {
-  margin-bottom: 24px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .1s;
+  z-index: 1;
+}
+.category .row.active {
+ opacity: 1;
+ position: static;
 }
 .category .card {
   text-align: center;
@@ -90,6 +103,8 @@ nav .navbar-collapse ul li a {
   justify-content: center;
   align-items: center;
   gap: 10px;
+z-index: 99;
+position: relative;
 }
 .category .arrows i,
 .category .arrows .counter .box-number,
@@ -103,12 +118,19 @@ nav .navbar-collapse ul li a {
   justify-content: center;
   align-items: center;
 }
+.disabled{
+  opacity: 0.5;         
+  cursor: no-drop; 
+}
 .category .arrows .box-number {
   background-color: var(--second-color);
   color: var(--color);
 }
 /* category */
 /* services */
+.services{
+  margin-top: 25px;
+}
 .services .row {
   align-items: center;
 }
@@ -143,6 +165,9 @@ nav .navbar-collapse ul li a {
 }
 /* services */
 /* books */
+.books{
+  margin-top: 25px;
+}
 .books .all-gallery .allnavGalllery {
   display: flex;
   justify-content: center;
@@ -200,6 +225,9 @@ nav .navbar-collapse ul li a {
 }
 /* books */
 /* frequently */
+.frequently{
+  margin-top: 25px;
+}
 .frequently .accordion {
   border: 1px solid var(--paragraph-color);
   border-radius: 12px;
@@ -245,6 +273,9 @@ nav .navbar-collapse ul li a {
 }
 /* frequently */
 /* footer */
+footer{
+  margin-top: 25px;
+}
 footer .extra .row {
   display: flex;
   justify-content: center;
